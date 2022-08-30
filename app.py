@@ -20,14 +20,14 @@ st.header("Dashboard Inadimplência de Crédito")
     
 opcao= st.sidebar.multiselect(
     "SELECIONE A OPÇÃO",
-    ('LOAN_TYPE','GENDER','AGE')
+    ('TIPO DE RENDA','GENERO','IDADE')
 ) 
 
-if "LOAN_TYPE" in opcao:
+if "TIPO DE RENDA" in opcao:
     st.line_chart(df1)
-if "GENDER" in opcao:
+if "GENERO" in opcao:
     st.bar_chart(df4)
-if "AGE" in opcao:
+if "IDADE" in opcao:
     st.line_chart(df1)
 
 
