@@ -4,7 +4,7 @@ clear()
 from config import total
 
 print("#########################################################")
-print("#        Email Scraper - Dev. Rubens Sant Anna, PhD           #")
+print("#        Email Scraper - Rubens Sant Anna, PhD           #")
 print("#########################################################\n\n")
 
 try:
