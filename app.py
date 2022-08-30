@@ -2,7 +2,6 @@ from re import X
 import streamlit as st 
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import matplotlib.pyplot as plt
 df = pd.read_csv("credit_default.csv", index_col=0)
 df.head()
