@@ -1,3 +1,4 @@
+import streamlit as st
 import os
 clear = lambda: os.system("clear")
 clear()
