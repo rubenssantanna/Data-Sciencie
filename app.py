@@ -28,7 +28,7 @@ if "TIPO DE RENDA" in opcao:
 if "GENERO" in opcao:
     st.bar_chart(df4)
 if "IDADE" in opcao:
-    st.line_chart(df1)
+    st.line_chart(df3)
 
 
         
