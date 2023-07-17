@@ -4,9 +4,9 @@ import pandas as pd
 import numpy as np
 df = pd.read_csv("credit_default.csv", index_col=0)
 df.head()
-df3= df.groupby("age")["income","term"].mean()
-df1= df.groupby("loan_type")["age", "gender", "term"].mean()
-df4= df.groupby("gender")["age", "credit_score", "status"].mean()
+df3= df.groupby(df['age'])[['income', 'term']].mean()
+df1 = df.groupby(df['income'])[['term','loan_amount']].mean()
+df4 = df.groupby(df['gender'])[['property_value', 'credit_score', 'status']].mean()
 st.header("Dashboard Inadimplência de Crédito")
 #if st.sidebar.button("Escolha o Grafico"):
     #df3= pd.DataFrame(
