@@ -1,4 +1,4 @@
-pip freeze > requirements.txt
+import requirements.txt
 from re import X
 import streamlit as st 
 from PIL import Image
