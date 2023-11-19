@@ -1,6 +1,7 @@
 from re import X
 import streamlit as st 
 from PIL import Image
+import sklearn
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
