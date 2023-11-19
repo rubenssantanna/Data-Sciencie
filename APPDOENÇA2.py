@@ -26,9 +26,6 @@ st.write("PACIENTE:", name)
 X= df.drop(columns=['class'] )
 Y= df["class"]
 
-# Separa treino e teste
-X_train, X_test, y_train, y_test= train_test_split(X,Y,test_size=.2, random_state=42)
-
 def get_user_data():
     age= st.sidebar.slider ('Idade', 20,100, 60)
     sex = st.sidebar.selectbox('Sexo: 0= Masculino 1= Feminino', options= [0,1])
@@ -71,6 +68,9 @@ grafico=st.bar_chart(user_input_variables)
 
 st.subheader('Dados do Paciente')
 st.write(user_input_variables)
+
+# Separa treino e teste
+X_train, X_test, y_train, y_test= train_test_split(X,Y,test_size=.2, random_state=42)
 
 # Método Random Forest Classifier
 clf_RF = RandomForestClassifier() 
