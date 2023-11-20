@@ -13,7 +13,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 image = Image.open('heart.gif')
-st.image(image, caption='App que utiliza Machine Learning para prever doença do coração, preencha os campos com as informações do paciente', width= 'auto', use_column_width= "auto")
+st.image(image, caption='App que usa Machine Learning para prever doença do coração, preencha os campos com as informações do paciente', width= 'auto', use_column_width= "auto")
 
 # Importar Datframe
 df = pd.read_csv('heart-statlog.csv')
