@@ -90,4 +90,5 @@ st.write("F1 Score: {}".format(f1_score(y_test, y_pred)))
 st.subheader('Previsão:')
 prediction= clf_RF.predict(user_input_variables)
 st.write(prediction)
-st.write("Valor= 0- sem risco *** Valor= 1- risco ter Doença no Coração")
+st.write("Valor= 0  **** Sem risco de ter doença no coração /
+          Valor= 1  **** Com risco de ter doença no Coração")
